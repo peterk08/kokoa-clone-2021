@@ -1,40 +1,68 @@
 .more-screen .icon-row {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .more-suggestions {
-    margin-top: 50px;
-    border-top: var(--main-border);
-    padding-top:40px;
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
 }
 
-.more-suggestions__title{
-    margin-bottom:30px;
+.more-suggestions__title {
+  margin-bottom: 30px;
 }
 
 .more-suggestions__icons {
-    display:flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .more-suggestions__icon {
-    margin-right: 30px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes rainbowAni {
+  0% {
+    background-color: yellow;
+  }
+  20% {
+    background-color: yellowgreen;
+  }
+  40% {
+    background-color: aquamarine;
+  }
+  60% {
+    background-color: cornflowerblue;
+  }
+  80% {
+    background-color: aquamarine;
+  }
+  90% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: yellow;
+  }
 }
 
 .more-suggestions__icon-image {
-    width: 60px;
-    height: 60px;
-    background-color: var(--yellow);
-    border-radius: 10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: rainbowAni 5s linear infinite;
 }
 
 .more-suggestions__icon-image i {
-    font-size: 32px;
-    color:white;
+  font-size: 32px;
+  color: white;
 }
